@@ -1,0 +1,23 @@
+{
+  "name": "devops-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Miriam-mee/Devops-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Miriam-mee/Devops-demo/issues"
+  },
+  "homepage": "https://github.com/Miriam-mee/Devops-demo#readme",
+  "devDependencies": {
+    "cypress": "^12.14.0"
+  }
+}
