@@ -18,6 +18,11 @@
   },
   "homepage": "https://github.com/Miriam-mee/Devops-demo#readme",
   "devDependencies": {
-    "cypress": "^12.14.0"
+    "cypress": "^12.14.0",
+    "eslint": "^8.43.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^16.0.0",
+    "eslint-plugin-promise": "^6.1.1"
   }
 }
