@@ -1,12 +1,23 @@
 name: Devops Test
 
-on: push
+on:
+  pull_request:
 
 jobs:
   build:
     runs-on: ubuntu-22.04
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+
       - name: Cypress run
         uses: cypress-io/github-action@v5
+        with:
+          node-version: 14
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Cypress Test
+        run: npm run test
