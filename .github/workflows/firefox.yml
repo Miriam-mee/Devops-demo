@@ -1,11 +1,12 @@
-name: Devops Test
+name: Devops Test for firefox
 
 on:
   push:
 
 jobs:
+  firefox:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-20.04
 
     steps:
       - name: Checkout
@@ -15,3 +16,4 @@ jobs:
         uses: cypress-io/github-action@v5
         with:
           node-version: 14
+           browser: firefox

@@ -13,8 +13,13 @@ describe('login functionality', () => {
     cy.contains('Swag Labs')
   })
 
-  it('login with locked user credentials', () => {
+  it('login with locked out user credentials', () => {
     cy.Login(Cypress.env('lockedOutUser'), Cypress.env('password'))
     cy.contains('Sorry, this user has been locked out.')
+  })
+
+  it('login with problem user credentials', () => {
+    cy.Login(Cypress.env('problemUser'), Cypress.env('password'))
+    cy.contains('Products')
   })
 });
