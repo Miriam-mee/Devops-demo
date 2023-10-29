@@ -1,0 +1,14 @@
+name: Linting PR
+
+on:
+  push:
+
+jobs:
+  chrome:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Lint
+        uses: actions/checkout@v3
+        run: npm install
+        run: npm run lint
