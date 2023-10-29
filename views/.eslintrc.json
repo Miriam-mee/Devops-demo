@@ -1,0 +1,62 @@
+{
+    "extends": ["next", "airbnb-base", "plugin:@typescript-eslint/recommended"],
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint"],
+    "root": true,
+    "rules": {
+      "no-underscore-dangle": 0,
+      "camelcase": 0,
+      "array-bracket-newline": 0,
+      "cypress/no-unnecessary-waiting": 0,
+      "import/no-anonymous-default-export": 0,
+      "no-shadow": 0,
+      "no-unused-expressions": [
+        "error",
+        { "allowShortCircuit": true, "allowTernary": true }
+      ],
+      "no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": "warn",
+      "import/prefer-default-export": 0,
+      "no-plusplus": 0,
+      "no-nested-ternary": 0,
+      "no-param-reassign": 0,
+      "no-restricted-globals": 0,
+      "semi": "off",
+      "prettier/prettier": 0,
+      "no-alert": 0,
+      "@next/next/no-img-element": 0,
+      "react/no-unescaped-entities": 0,
+      "object-curly-newline": 0,
+      "comma-dangle": 0,
+      "indent": 0,
+      "no-restricted-exports": 0,
+      "operator-linebreak": 0,
+      "implicit-arrow-linebreak": 0,
+      "function-paren-newline": 0,
+      "no-console": "error",
+      "max-len": [1],
+      "default-param-last": "off",
+      "import/extensions": [
+        "error",
+        "ignorePackages",
+        {
+          "js": "never",
+          "jsx": "never",
+          "ts": "never",
+          "tsx": "never"
+        }
+      ]
+    },
+    "globals": {
+      "NodeJS": true
+    },
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "extensions": [".js", ".jsx", ".ts", ".tsx"],
+          "moduleDirectory": ["node_modules", "."]
+        }
+      }
+    }
+  }
+  

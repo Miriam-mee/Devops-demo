@@ -22,4 +22,9 @@ describe('login functionality', () => {
     cy.Login(Cypress.env('problemUser'), Cypress.env('password'))
     cy.contains('Products')
   })
+
+  it('performance glitch user login attempt', () => {
+    cy.Login(Cypress.env('performanceGlitchUser'), Cypress.env('password'))
+    cy.contains('Products')
+  })
 });
